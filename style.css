@@ -7,7 +7,8 @@
 body{
   font-family: 'Bai Jamjuree', sans-serif;
   text-align: center;
-  background: #FFF url("images/bg-header-mobile.png") 0 0 no-repeat;position:c;
+  background: #FFF url("images/bg-header-mobile.png")  no-repeat;
+  background-position: contain;
 }
 header{
   margin-bottom: 90px;
@@ -42,7 +43,6 @@ p{
 .button{
  display: flex;
  flex-direction: column;
- background-color: white;
  justify-content: center;
  margin: 40px auto 80px auto;
  max-width: 80%;
@@ -111,4 +111,39 @@ text-align: center;
 }
     .attribution a { 
      color: darkred;
+    }
+    
+    
+    @media (min-width: 768px)  {
+     body{
+     background: #fff url(images/bg-header-desktop.png) no-repeat;
+     }
+     
+     .section2{
+      display: flex;
+      justify-content: flex-start;
+     }
+     
+     footer{
+      display: flex;
+      justify-content: space-around;
+     }
+     ul li{
+      flex-wrap: wrap;
+      flex-basis: 50%;
+     }
+     .heading2{
+      display: flex;
+      flex-direction: column;
+     }
+     .section2 > img{
+      margin-left: 0;
+     }
+     .button{
+      flex-direction: row;
+     }
+     .brand-icon{
+      display: flex;
+      justify-content: space-around;
+     }
     }
